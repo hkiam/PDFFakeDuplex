@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling>=1.18.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdffake-duplex"
+version = "0.1.0"
+description = "Interleave single-sided scan PDFs (fronts first, backs second) into correct order."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "PDFFakeDuplex Contributors" }]
+dependencies = [
+  "pypdf>=3.2",
+]
+
+[project.scripts]
+pdffake-duplex = "pdffake_duplex:main"
+
